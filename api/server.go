@@ -14,8 +14,8 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/robfig/cron"
 
-	"github.com/esprezzo/open-perkle-pool/storage"
-	"github.com/esprezzo/open-perkle-pool/util"
+	"github.com/My-Kings/open-kings-pool/storage"
+	"github.com/My-Kings/open-kings-pool/util"
 )
 
 type ApiConfig struct {
