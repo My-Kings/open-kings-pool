@@ -19,7 +19,7 @@ if [ ! -L "$ethdir/open-kings-pool" ]; then
 fi
 
 cd "$ethdir"
-mv "open-perkle-pool" "open-kings-pool.old"
+mv "open-kings-pool" "open-kings-pool.old"
 ln -s ../../../../../. open-kings-pool
 cd "$root"
 
