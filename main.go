@@ -13,10 +13,10 @@ import (
 
 	"github.com/yvasiyarov/gorelic"
 
-	"github.com/esprezzo/open-perkle-pool/api"
-	"github.com/esprezzo/open-perkle-pool/payouts"
-	"github.com/esprezzo/open-perkle-pool/proxy"
-	"github.com/esprezzo/open-perkle-pool/storage"
+	"github.com/My-Kings/open-kings-pool/api"
+	"github.com/My-Kings/open-kings-pool/payouts"
+	"github.com/My-Kings/open-kings-pool/proxy"
+	"github.com/My-Kings/open-kings-pool/storage"
 )
 
 var cfg proxy.Config
