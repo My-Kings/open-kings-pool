@@ -1,4 +1,4 @@
-## Open Source Perkle (PRKL) Mining Pool
+## Open Source Perkle (REOSC) Mining Pool
 
 ![Main page of open-kings-pool](https://raw.githubusercontent.com/My-Kings/open-kings-pool/REOSC/misc/pool.PNG)
 
