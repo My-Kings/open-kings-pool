@@ -9,8 +9,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/esprezzo/open-perkle-pool/storage"
-	"github.com/esprezzo/open-perkle-pool/util"
+	"github.com/My-Kings/open-kings-pool/storage"
+	"github.com/My-Kings/open-kings-pool/util"
 )
 
 type Config struct {
