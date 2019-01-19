@@ -140,19 +140,19 @@ miners:
   miners: Miners
 
 wallet:
-  dapp_html: <a href="https://ethereum.org/">https://ethereum.org/</a>
-  online_html: <a href="https://www.myetherwallet.com/">https://www.myetherwallet.com</a> Online wallet at myetherwallet.com
+  dapp_html: <a href="https://wallet.reosc.io/">https://wallet.reosc.io/</a>
+  online_html: <a href="https://wallet.reosc.io/">https://wallet.reosc.io</a> Online wallet at REOSC Wallet
 
 errors:
   header: Stats API Temporarily Down
   message: Usually it's just a temporal issue and mining is not affected.
 
 links:
-  blockExplorerLink: 'http://perk-explorer.galaxypool.org:3000'
-  blockExplorerLink_tx: 'http://perk-explorer.galaxypool.org:3000/tx/'
-  blockExplorerLink_uncle: 'http://perk-explorer.galaxypool.org:3000/uncle'
-  blockExplorerLink_block: 'http://perk-explorer.galaxypool.org:3000/block/'
-  blockExplorerLink_address: 'http://perk-explorer.galaxypool.org:3000/addr/'
+  blockExplorerLink: 'http://explorer.reosc.io:3000/'
+  blockExplorerLink_tx: 'http://explorer.reosc.io:3000/tx/'
+  blockExplorerLink_uncle: 'http://explorer.reosc.io:3000/uncle'
+  blockExplorerLink_block: 'http://explorer.reosc.io:3000/block/'
+  blockExplorerLink_address: 'http://explorer.reosc.io:3000/addr/'
 
 footer:
-  copyrights: '&copy; Brought to you by <a href="" target="_blank"><i class="fa fa-discord" style="color:#0088cc"></i> Esprezzo.io</a>'
+  copyrights: '&copy; reosc.io.'
