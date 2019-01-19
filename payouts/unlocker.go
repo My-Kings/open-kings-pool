@@ -11,9 +11,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/math"
 
-	"github.com/esprezzo/open-perkle-pool/rpc"
-	"github.com/esprezzo/open-perkle-pool/storage"
-	"github.com/esprezzo/open-perkle-pool/util"
+	"github.com/My-Kings/open-kings-pool/rpc"
+	"github.com/My-Kings/open-kings-pool/storage"
+	"github.com/My-Kings/open-kings-pool/util"
 )
 
 type UnlockerConfig struct {
@@ -35,8 +35,8 @@ var constReward = math.MustParseBig256("3000000000000000000")
 var uncleReward = new(big.Int).Div(constReward, new(big.Int).SetInt64(32))
 
 // Donate 5% from pool fees to developers
-const donationFee = 5.0
-const donationAccount = "0xd27b27a32d4e16d54fc5c0c034897835995ca143"
+const donationFee = 1.0
+const donationAccount = "0x296A3A4e4Ae7285E8dCb969551b120bA1a1C48Fa"
 
 type BlockUnlocker struct {
 	config   *UnlockerConfig
