@@ -13,10 +13,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/esprezzo/open-perkle-pool/policy"
-	"github.com/esprezzo/open-perkle-pool/rpc"
-	"github.com/esprezzo/open-perkle-pool/storage"
-	"github.com/esprezzo/open-perkle-pool/util"
+	"github.com/My-Kings/open-kings-pool/policy"
+	"github.com/My-Kings/open-kings-pool/rpc"
+	"github.com/My-Kings/open-kings-pool/storage"
+	"github.com/My-Kings/open-kings-pool/util"
 )
 
 type ProxyServer struct {
