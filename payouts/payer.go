@@ -12,9 +12,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	"github.com/esprezzo/open-perkle-pool/rpc"
-	"github.com/esprezzo/open-perkle-pool/storage"
-	"github.com/esprezzo/open-perkle-pool/util"
+	"github.com/My-Kings/open-kings-pool/rpc"
+	"github.com/My-Kings/open-kings-pool/storage"
+	"github.com/My-Kings/open-kings-pool/util"
 )
 
 const txCheckInterval = 5 * time.Second
