@@ -24,7 +24,7 @@
   "unlocker": {
     "enabled": true,
     "poolFee": 10.0,
-    "poolFeeAddress": "0x8e19b0264be37f8766b2fff2f85f6176030b9e37",
+    "poolFeeAddress": "0x",
     "donate": true,
     "depth": 120,
     "immatureDepth": 20,
