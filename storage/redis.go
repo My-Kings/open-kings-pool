@@ -10,7 +10,7 @@ import (
 
   "gopkg.in/redis.v3"
 
-	"github.com/esprezzo/open-perkle-pool/util"
+	"github.com/My-Kings/open-kings-pool/util"
 )
 
 type Config struct {
