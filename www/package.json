@@ -1,7 +1,7 @@
 {
-  "name": "open-social-pool",
+  "name": "open-kings-pool",
   "version": "0.0.0",
-  "description": "Ethereum Social Pool",
+  "description": "Ethereum Kings Pool",
   "directories": {
     "doc": "doc",
     "test": "tests"
