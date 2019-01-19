@@ -6,8 +6,8 @@ import (
 	"strings"
 	"errors"
 
-	"github.com/esprezzo/open-perkle-pool/rpc"
-	"github.com/esprezzo/open-perkle-pool/util"
+	"github.com/My-Kings/open-kings-pool/rpc"
+	"github.com/My-Kings/open-kings-pool/util"
 )
 
 // Allow only lowercase hexadecimal with 0x prefix
