@@ -13,7 +13,7 @@ import (
 var hasher = ethash.New()
 
 func (s *ProxyServer) processShare(login, id, ip string, t *BlockTemplate, params []string) (bool, bool) {
-	// Now, the function received some work with login id and worker name and all information, ready to be processed
+	//  Now, the function received some work with login id and worker name and all information, ready to be processed
 	// and checked if it is a valid work or not, and if it is a block or not and write to db accordingly
 	nonceHex := params[0]
 	hashNoNonce := params[1]
