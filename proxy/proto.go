@@ -13,7 +13,7 @@ type StratumReq struct {
 	Worker string `json:"worker"`
 }
 
-// Stratum
+//  Stratum
 type JSONPushMessage struct {
 	// FIXME: Temporarily add ID for Claymore compliance
 	Id      int64       `json:"id"`
