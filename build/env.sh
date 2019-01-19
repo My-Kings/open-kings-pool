@@ -10,17 +10,17 @@ fi
 # Create fake Go workspace if it doesn't exist yet.
 workspace="$PWD/build/_workspace"
 root="$PWD"
-ethdir="$workspace/src/github.com/esprezzo"
-if [ ! -L "$ethdir/open-perkle-pool" ]; then
+ethdir="$workspace/src/github.com/My-Kings"
+if [ ! -L "$ethdir/open-kings-pool" ]; then
     mkdir -p "$ethdir"
     cd "$ethdir"
-    ln -s ../../../../../. open-perkle-pool
+    ln -s ../../../../../. open-kings-pool
     cd "$root"
 fi
 
 cd "$ethdir"
-mv "open-perkle-pool" "open-perkle-pool.old"
-ln -s ../../../../../. open-perkle-pool
+mv "open-perkle-pool" "open-kings-pool.old"
+ln -s ../../../../../. open-kings-pool
 cd "$root"
 
 
@@ -31,8 +31,8 @@ GOBIN="$PWD/build/bin"
 export GOPATH GOBIN
 
 # Run the command inside the workspace.
-cd "$ethdir/open-perkle-pool"
-PWD="$ethdir/open-perkle-pool"
+cd "$ethdir/open-kings-pool"
+PWD="$ethdir/open-kings-pool"
 
 # Launch the arguments with the configured environment.
 exec "$@"
