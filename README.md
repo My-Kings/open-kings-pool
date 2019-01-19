@@ -1,6 +1,6 @@
 ## Open Source Perkle (PRKL) Mining Pool
 
-![Main page of open-perkle-pool](https://raw.githubusercontent.com/esprezzo/open-perkle-pool/master/misc/pool.PNG)
+![Main page of open-kings-pool](https://raw.githubusercontent.com/My-Kings/open-kings-pool/REOSC/misc/pool.PNG)
 
 [![Build Status](https://api.travis-ci.org/esprezzo/open-perkle-pool.svg?branch=master)](https://travis-ci.org/esprezzo/open-perkle-pool)
 [![Report Card](https://goreportcard.com/badge/github.com/esprezzo/open-perkle-pool)](https://goreportcard.com/report/github.com/esprezzo/open-perkle-pool)
@@ -62,28 +62,33 @@ This will install the latest nodejs
     $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
     $ sudo apt-get install -y nodejs
 
-### Install multi-geth
+### Install REOSC-Node
 
-    $ wget https://github.com/ethereumsocial/multi-geth/releases/download/v1.8.10/multi-geth-linux-v1.8.10.zip
-    $ unzip multi-geth-linux-v1.8.10.zip
-    $ sudo mv geth /usr/local/bin/geth
+    $ sudo apt-get update
 
-### Run multi-geth
+    $ wget https://github.com/REOSC/mn/releases/download/2.1.4/reosc-node
+
+    $ chmod +x reosc-node
+
+    $ sudo cp reosc-node /usr/local/bin/reosc
+    
+
+### Run REOSC-Node
 
 If you use Ubuntu, it is easier to control services by using serviced.
 
-    $ sudo nano /etc/systemd/system/perkle.service
+    $ sudo nano /etc/systemd/system/reosc.service
 
 Copy the following example
 
 ```
 [Unit]
-Description=Perkle for Pool
+Description=REOSC for Pool
 After=network-online.target
 
 [Service]
-ExecStart=/usr/local/bin/geth --perkle --cache=1024 --rpc --extradata "Mined by <your-pool-domain>" --ethstats "<your-pool-domain>:perkle@perlklestats.net"
-User=<your-user-name>
+ExecStart=/usr/local/bin/reosc --chain=reosc --jsonrpc-port 8545 --port 30305 --jsonrpc-interface 127.0.0.1 --author="Wallet Address Generated" --unlock="Wallet Address Generated" --password="/home/<user>/pass.txt" --extra-data "Mined by <REOSC-Pool>"
+User=<user>
 
 [Install]
 WantedBy=multi-user.target
@@ -91,31 +96,24 @@ WantedBy=multi-user.target
 
 Then run multi-geth by the following commands
 
-    $ sudo systemctl enable perkle
-    $ sudo systemctl start perkle
+    $ sudo systemctl enable reosc
+    $ sudo systemctl start reosc
 
 If you want to debug the node command
 
-    $ sudo systemctl status perkle
+    $ sudo systemctl status reosc
 
-Run console
 
-    $ geth attach
 
-Register pool account and open wallet for transaction. This process is always required, when the wallet node is restarted.
+### Install Kings Pool
 
-    > personal.newAccount()
-    > personal.unlockAccount(eth.accounts[0],"password",40000000)
-
-### Install Perkle Pool
-
-    $ git clone https://github.com/esprezzo/open-perkle-pool
-    $ cd open-perkle-pool
+    $ git clone https://github.com/My-Kings/open-kings-pool
+    $ cd open-kings-pool
     $ make all
 
-If you see open-perkle-pool after ls ~/open-perkle-pool/build/bin/, the installation has completed.
+If you see open-kings-pool after ls ~/open-kings-pool/build/bin/, the installation has completed.
 
-    $ ls ~/open-perkle-pool/build/bin/
+    $ ls ~/open-reosc-pool/build/bin/
 
 ### Set up Perkle pool
 
