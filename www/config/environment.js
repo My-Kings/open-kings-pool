@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'open-social-pool',
+    modulePrefix: 'open-kings-pool',
     environment: environment,
     rootURL: '/',
     locationType: 'hash',
@@ -15,26 +15,26 @@ module.exports = function(environment) {
 
     APP: {
       // API host and port
-      ApiUrl: '//13.76.155.123:8080/',
-      PoolName: 'Official PΞRKLΞ Pool',
-      CompanyName: 'mine-perkle.esprezzo.io',
+      ApiUrl: '//kingsminer.ddnskings.com:8080/',
+      PoolName: 'KINGs REOSC Pool',
+      CompanyName: 'REOSC.io',
       // HTTP mining endpoint
-      HttpHost: 'https://mine-perkle.esprezzo.io',
+      HttpHost: 'https://kingsminer.ddnsking.com',
       HttpPort: 8882,
 
       // Stratum mining endpoint
-      StratumHost: 'perkle-pool.esprezzo.io',
+      StratumHost: 'kingsminer.ddnskings.com',
       StratumPort: 8002,
 
       // Fee and payout details
       PoolFee: '0.5%',
-      PayoutThreshold: '1.0',
+      PayoutThreshold: '0.5',
       PayoutInterval: '3h',
 
       // For network hashrate (change for your favourite fork)
-      BlockTime: 14.4,
+      BlockTime: 15.0,
       BlockReward: 3,
-      Unit: 'PRKL:',
+      Unit: 'REOSC:',
 
     }
   };
@@ -43,7 +43,7 @@ module.exports = function(environment) {
     /* Override ApiUrl just for development, while you are customizing
       frontend markup and css theme on your workstation.
     */
-    ENV.APP.ApiUrl = '//13.76.155.123:8080/'
+    ENV.APP.ApiUrl = '//localhost:8080/'
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
