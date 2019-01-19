@@ -1,10 +1,10 @@
 package proxy
 
 import (
-	"github.com/esprezzo/open-perkle-pool/api"
-	"github.com/esprezzo/open-perkle-pool/payouts"
-	"github.com/esprezzo/open-perkle-pool/policy"
-	"github.com/esprezzo/open-perkle-pool/storage"
+	"github.com/My-Kings/open-kings-pool/api"
+	"github.com/My-Kings/open-kings-pool/payouts"
+	"github.com/My-Kings/open-kings-pool/policy"
+	"github.com/My-Kings/open-kings-pool/storage"
 )
 
 type Config struct {
